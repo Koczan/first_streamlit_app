@@ -44,7 +44,7 @@ fruit_choice = streamlit.text_input("What fruit would you like to add?", "jackfr
 streamlit.text("Thanks for adding " + fruit_choice);
 
 #this will not work correctly, but just go with it for now
-my_curr.execute("insert into fruit_load_list values ('from streamlit')");
+my_cur.execute("insert into fruit_load_list values ('from streamlit')");
 
 
 # fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
