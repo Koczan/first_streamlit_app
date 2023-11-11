@@ -40,20 +40,20 @@ try:
   if not fruit_choice:
     streamlit.error("Please select a fruit to get information")
   else:
-    back_from_function = get_fruityvice_data(fruit_choice)
-    streamlit.dataframe(back_from_function)
+    back_from_function = get_fruityvice_data(fruit_choice);
+    streamlit.dataframe(back_from_function);
 #import requests
 
 
 
 
 
-my_cnx = snowflake.connector.connect(streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
-my_data_row = my_cur.fetchone()
-streamlit.text("The fruit load list contains:")
-streamlit.text(my_data_row)
+my_cnx = snowflake.connector.connect(streamlit.secrets["snowflake"]);
+my_cur = my_cnx.cursor();
+my_cur.execute("select * from pc_rivery_db.public.fruit_load_list");
+my_data_row = my_cur.fetchone();
+streamlit.text("The fruit load list contains:");
+streamlit.text(my_data_row);
 
 fruit_choice = streamlit.text_input("What fruit would you like to add?", "jackfruit");
 streamlit.text("Thanks for adding " + fruit_choice);
