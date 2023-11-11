@@ -44,7 +44,7 @@ try:
 
 
 # dont run anything past here while we troubleshoot
-streamlit.stop();
+# streamlit.stop();
 
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
