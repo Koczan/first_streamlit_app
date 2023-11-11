@@ -44,7 +44,7 @@ try:
     back_from_function = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
     
-"""
+'''
 #import requests
 
 # dont run anything past here while we troubleshoot
@@ -78,4 +78,4 @@ streamlit.text(my_data_row)
 # fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 # show table using pandas
 #streamlit.dataframe(fruityvice_normalized)
-"""
+'''
